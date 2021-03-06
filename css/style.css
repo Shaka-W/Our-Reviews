@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #add8e6;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  width: 95%;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+}
+
+.header {
+  text-align: center;
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  background-color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  height: 450px;
+  padding: 1.3rem;
+  width: 100%;
+}
+
+.card .card__top {
+  margin: 0 auto 1rem auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.card .card__top .card__image {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+
+.card .card__body {
+  margin-bottom: 2rem;
+}
+
+.card .card__body .card__body-title {
+  margin-bottom: .5rem;
+}
+
+.card .card__body .card__body-sub {
+  margin-bottom: 1.5rem;
+}
+
+.card .card__icon-container i {
+  margin-right: 1rem;
+  color: #e6bbad;
+}
+
+.card a {
+  text-decoration: none;
+}
+
+@media (max-width: 420px) {
+  .card {
+    height: 500px;
+  }
+}

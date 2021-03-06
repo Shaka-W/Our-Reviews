@@ -51,9 +51,9 @@ leftArrowBtn.addEventListener('click', () => {
 
   if (counter < 0) {
     counter = reviews.length - 1;
-    changePerson(counter);
+    changeReview(counter);
   } else {
-    changePerson(counter);
+    changeReview(counter);
   }
 
 });
@@ -63,18 +63,18 @@ rightArrowBtn.addEventListener('click', () => {
 
   if (counter > 3) {
     counter = 0;
-    changePerson(counter)
+    changeReview(counter)
   } else {
-    changePerson(counter)
+    changeReview(counter)
   }
   
 });
 
 window.addEventListener('load', () => {
-  changePerson(counter);
+  changeReview(counter);
 });
 
-function changePerson(counter) {
+function changeReview(counter) {
   cardImg.src = reviews[counter].src;
   cardTitle.textContent = reviews[counter].name;
   cardSub.textContent = reviews[counter].occupation;

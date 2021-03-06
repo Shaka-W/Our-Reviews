@@ -8,7 +8,7 @@ const rightArrowBtn = document.querySelector('.btn-right');
 
 let counter = 0;
 
-let persons = [
+let reviews = [
   {name: 'Sarah Patrick',
   occupation: 'WEB DEVELOPER',
   description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -50,7 +50,7 @@ leftArrowBtn.addEventListener('click', () => {
   counter--;
 
   if (counter < 0) {
-    counter = persons.length - 1;
+    counter = reviews.length - 1;
     changePerson(counter);
   } else {
     changePerson(counter);
@@ -75,8 +75,8 @@ window.addEventListener('load', () => {
 });
 
 function changePerson(counter) {
-  cardImg.src = persons[counter].src;
-  cardTitle.textContent = persons[counter].name;
-  cardSub.textContent = persons[counter].occupation;
-  cardDescription.textContent = persons[counter].description;
+  cardImg.src = reviews[counter].src;
+  cardTitle.textContent = reviews[counter].name;
+  cardSub.textContent = reviews[counter].occupation;
+  cardDescription.textContent = reviews[counter].description;
 }
